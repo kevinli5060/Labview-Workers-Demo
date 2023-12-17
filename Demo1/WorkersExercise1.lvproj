@@ -11,12 +11,16 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
+		<Item Name="Data" Type="Folder" URL="../Data">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Comm Worker.lvclass" Type="LVClass" URL="../Workers/Comm Worker/Comm Worker.lvclass"/>
 		<Item Name="Manager Worker.lvclass" Type="LVClass" URL="../Workers/New Worker/Manager Worker.lvclass"/>
-		<Item Name="DataAcquire Worker.lvclass" Type="LVClass" URL="../Workers/Acquire Worker/DataAcquire Worker.lvclass"/>
 		<Item Name="Config Worker.lvclass" Type="LVClass" URL="../Workers/Config Worker/Config Worker.lvclass"/>
 		<Item Name="ChartView Worker.lvclass" Type="LVClass" URL="../Workers/ChartView Worker/ChartView Worker.lvclass"/>
 		<Item Name="User Worker.lvclass" Type="LVClass" URL="../Workers/User Worker/User Worker.lvclass"/>
+		<Item Name="DataAcquire Worker.lvclass" Type="LVClass" URL="../Workers/Acquire Worker/DataAcquire Worker.lvclass"/>
+		<Item Name="DataSave Worker.lvclass" Type="LVClass" URL="../Workers/DataSave Worker/DataSave Worker.lvclass"/>
 		<Item Name="Launcher - New Worker.vi" Type="VI" URL="../Launchers/Launcher - New Worker.vi"/>
 		<Item Name="依赖关系" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
@@ -67,6 +71,13 @@
 				<Item Name="VI Scripting - Traverse.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/traverseref.llb/VI Scripting - Traverse.lvlib"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Workers.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/_Workers/Library/Workers.lvlib"/>
+				<Item Name="Write Spreadsheet String.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Spreadsheet String.vi"/>
+				<Item Name="Write Delimited Spreadsheet (string).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (string).vi"/>
+				<Item Name="Write Delimited Spreadsheet (I64).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (I64).vi"/>
+				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
+				<Item Name="Write Delimited Spreadsheet.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet.vi"/>
+				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
+				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 			</Item>
 		</Item>
 		<Item Name="程序生成规范" Type="Build"/>
